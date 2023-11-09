@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="back"></div>
+    <div class="container">
+      <input type="search" name="search" class="search" placeholder="Search..."> 
+      <div class="todoBox">
+        <div class="Title">
+        <h3 class="todoTitle">To do</h3>
+        <span class="todoCounter">0</span></div>
+        <div class="todoCards" id="todoCards"></div>
+        <div class="addCard" id="addCard"><span>+</span> Add card</div>
+      </div>
+      <div class="todoBox">
+        <div class="Title">
+        <h3 class="todoTitle">In progress</h3><span class="todoCounter">0</span></div>
+        <div class="todoCards" id="todoCards"></div>
+        <div class="addCard" id="addCard"><span>+</span> Add card</div>
+      </div>
+      <div class="todoBox">
+        <div class="Title">
+        <h3 class="todoTitle">Completed</h3><span class="todoCounter">0</span></div>
+        <div class="todoCards" id="todoCards"></div>
+        <div class="addCard" id="addCard"><span>+</span> Add card</div>
+      </div>
+  </div>
+      <form class="addTask" id="addTask">
+      <h3>Add Task</h3>
+      <!-- Title -->
+      <label for="title" id="labelTitle">Title</label><br />
+      <input type="text" id="title" name="title" required placeholder="Please insert title"/><br />
+      <!-- Description -->
+      <label for="descr" id="labelDescr">Description</label><br />
+      <textarea type="text" id="descr" required name="descr" placeholder="Please insert description"></textarea>
+      <!-- Status -->
+      <label for="status">Status</label><br />
+      <select list="status" name="status" id="status" required/>
+        <option disabled selected value="">Select status</option>
+        <option value="To do">To do</option>
+        <option value="In progress">In progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <!-- Priority -->
+      <label for="priotity">Priority</label><br />
+      <select list="priority" name="priority" id="priority" required/>
+        <option disabled selected value="">Select priority</option>
+        <option value="Low">Low</option>
+        <option value="Mid">Mid</option>
+        <option value="High">High</option>
+</select>
+      <button class="btnAddTask" type="submit">Add Task</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

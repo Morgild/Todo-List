@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url(./background.avif);
+  background-size: fill;
+  /* background-repeat:; */
+  padding-top: 30px;
+}
+#back {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000090;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+.search {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0 0 10px #cacaca;
+    text-align:center;
+    z-index: 0; 
+    background-color: rgba(234, 245, 245, 0.7);
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.todoBox {
+  width: 20rem;
+  background-color: rgba(234, 245, 245, 0.7);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 3px 10px 5px #00000088;
+}
+h3 {
+  padding: 15px;
+  width: 100%;
+  font-size: 30px;
+}
+.todoCards {
+  width: 100%;
+}
+.addCard {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.addCard:hover {
+  background-color: rgba(136, 136, 136, 0.5);
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.addTask {
+  position: absolute;
+  left: 50%;
+  top: 30vw;
+  background-color: #fff;
+  width: 30%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 0;
+}
+.Title {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.todoCounter {
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+#title {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+#descr {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: start;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+#status {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+#priority {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+
+.btnAddTask {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+.card {
+  background-color: #fff;
+  margin: 10px 5px;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0 1px 8px 3px #00000060;
+  /* cursor: pointer; */
+}
+.Title{
+    padding: 0;
+}
+.cardTitleDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  /* background-color: green; */
+  height: 40px;
+}
+.cardTitle {
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+}
+.cardTitleX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgb(242, 242, 242);
+  font-size: 20px;
+  width: 30px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  color: #000;
+}
+.cardDescr {
+  padding: 5px;
+  margin-left: 15px;
+}
+.cardPriority {
+  padding: 5px;
+  margin-left: 15px;
+}
+.cardCheck {
+  cursor: pointer;
+  background-color: #dbdbdb;
+  font-size: 20px;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+.descrText {
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.priorityText {
+  padding: 3px 10px;
+  margin-left: 30px;
+  font-size: 20px;
+  display: block;
+  border: 1px solid #000;
+  /* margin: 5px 20px 5px 5px; */
+  border-radius: 10px;
+  /* background-color: aqua; */
+  width: fit-content;
+}
+.todoCards {
+  display: flex;
+  flex-direction: column;
+}
+.todoBox:last-child .cardCheck {
+  background-color: rgb(121, 119, 119);
+  color: #fff;
+}
+.statusText {
+    display: none;
+}
+.imgEdit {
+  height: 20px;
+  cursor: pointer;
+}
