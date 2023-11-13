@@ -134,6 +134,23 @@ const render = () => {
       formElement.elements[3].value = priorityText;
     });
   });
+  const priorityText=document.querySelectorAll(".priorityText")
+  console.log(priorityText)
+  priorityText.forEach((item, index)=>{
+  
+    if(item.textContent=="High"){
+      item.style.background='#E34234'
+      item.style.color="#fff"
+    }
+    if(item.textContent=="Mid"){
+      item.style.background='#FA8128'
+      item.style.color="#fff"
+    }
+    if(item.textContent=="Low"){
+      item.style.background='#DFFE00'
+      item.style.color="#000"
+    }
+  })
 };
 const Card = (props) => {
   return `
@@ -200,7 +217,6 @@ addTask.addEventListener("submit", (event) => {
       });
       setData(newData1);
       editID=0;}
-
   saveData();
   xCounter();
 });
